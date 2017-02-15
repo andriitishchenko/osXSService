@@ -33,6 +33,10 @@ CGEventRef CGEventCallback(CGEventTapProxy proxy, CGEventType type, CGEventRef e
           isKeyCTRL ? @"Yes" : @"No",
           isKeyCMD ? @"Yes" : @"No"
           );
+    
+    if (keyCode == 18 && isKeyALT) {
+        [(AppDelegate*)[NSApplication sharedApplication].delegate callOSAScript];
+    }
     return event;
 }
 -(void)keyHandlerRegister{
@@ -80,6 +84,7 @@ CGEventRef CGEventCallback(CGEventTapProxy proxy, CGEventType type, CGEventRef e
     icon.template = YES;
     
     _statusItem.button.image = icon;
+    _statusItem.toolTip = @"ctrl+click to QUIT";
     [_statusItem setAction:@selector(itemClicked:)];
     
 //    if (AXIsProcessTrustedWithOptions != NULL) {
@@ -125,6 +130,47 @@ CGEventRef CGEventCallback(CGEventTapProxy proxy, CGEventType type, CGEventRef e
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
     
+}
+
+-(void)callOSAScript{
+    //https://developer.apple.com/library/content/technotes/tn2084/_index.html
+    NSDictionary* errorDict;
+    NSAppleEventDescriptor* returnDescriptor = NULL;
+    
+    NSAppleScript* scriptObject = [[NSAppleScript alloc] initWithSource:
+ @"display notification \"Pressed ALT+1\" with title \"Hi from AppleScript!\""
+                                   
+//                                   @"\
+//                                   set app_path to path to me\n\
+//                               ¡    tell application \"System Events\"\n\
+//                                   if \"AddLoginItem\" is not in (name of every login item) then\n\
+//                                   make login item at end with properties {hidden:false, path:app_path}\n\
+//                                   end if\n\
+//                                   end tell"
+                                   
+                                   ];
+    
+    returnDescriptor = [scriptObject executeAndReturnError: &errorDict];
+    if (returnDescriptor != NULL)
+    {
+        // successful execution
+        if (kAENullEvent != [returnDescriptor descriptorType])
+        {
+            // script returned an AppleScript result
+            if (cAEList == [returnDescriptor descriptorType])
+            {
+                // result is a list of other descriptors
+            }
+            else
+            {
+                // coerce the result to the appropriate ObjC type
+            }
+        } 
+    }
+    else
+    {
+        NSLog(@"%@", @"Some error!");
+    }
 }
 
 
