@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		4A314D1A1E55076F00A0627B /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A314D191E55076F00A0627B /* Carbon.framework */; };
 		4A314D1C1E55079900A0627B /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A314D1B1E55079900A0627B /* ApplicationServices.framework */; };
+		4A59D6651E564375005B02F0 /* KeyBind+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A59D65F1E564375005B02F0 /* KeyBind+CoreDataProperties.m */; };
+		4A59D6671E564375005B02F0 /* RunScript+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A59D6631E564375005B02F0 /* RunScript+CoreDataProperties.m */; };
+		4A59D66A1E5646B7005B02F0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A59D6691E5646B7005B02F0 /* CoreData.framework */; };
+		4A59D66D1E5B77AB005B02F0 /* coredataTestApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4A59D66B1E5B77AB005B02F0 /* coredataTestApp.xcdatamodeld */; };
+		4A59DF991E5B8002004FEA04 /* DB.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A59DF981E5B8002004FEA04 /* DB.m */; };
+		4A59DF9C1E5B8BCB004FEA04 /* NSManagedObject+Addons.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A59DF9B1E5B8BCB004FEA04 /* NSManagedObject+Addons.m */; };
+		4A59DF9F1E5B9BF1004FEA04 /* KeyProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A59DF9E1E5B9BF1004FEA04 /* KeyProcessor.m */; };
 		4ABB55E61E54EFA400FEDA74 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABB55E51E54EFA400FEDA74 /* AppDelegate.m */; };
 		4ABB55E91E54EFA400FEDA74 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABB55E81E54EFA400FEDA74 /* main.m */; };
 		4ABB55EC1E54EFA400FEDA74 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABB55EB1E54EFA400FEDA74 /* ViewController.m */; };
@@ -21,6 +28,22 @@
 /* Begin PBXFileReference section */
 		4A314D191E55076F00A0627B /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		4A314D1B1E55079900A0627B /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		4A59D65C1E564375005B02F0 /* KeyBind+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "KeyBind+CoreDataClass.h"; path = "vkKeyBind/KeyBind+CoreDataClass.h"; sourceTree = "<group>"; };
+		4A59D65D1E564375005B02F0 /* KeyBind+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "KeyBind+CoreDataClass.m"; path = "vkKeyBind/KeyBind+CoreDataClass.m"; sourceTree = "<group>"; };
+		4A59D65E1E564375005B02F0 /* KeyBind+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "KeyBind+CoreDataProperties.h"; path = "vkKeyBind/KeyBind+CoreDataProperties.h"; sourceTree = "<group>"; };
+		4A59D65F1E564375005B02F0 /* KeyBind+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "KeyBind+CoreDataProperties.m"; path = "vkKeyBind/KeyBind+CoreDataProperties.m"; sourceTree = "<group>"; };
+		4A59D6601E564375005B02F0 /* RunScript+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RunScript+CoreDataClass.h"; path = "vkKeyBind/RunScript+CoreDataClass.h"; sourceTree = "<group>"; };
+		4A59D6611E564375005B02F0 /* RunScript+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RunScript+CoreDataClass.m"; path = "vkKeyBind/RunScript+CoreDataClass.m"; sourceTree = "<group>"; };
+		4A59D6621E564375005B02F0 /* RunScript+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RunScript+CoreDataProperties.h"; path = "vkKeyBind/RunScript+CoreDataProperties.h"; sourceTree = "<group>"; };
+		4A59D6631E564375005B02F0 /* RunScript+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RunScript+CoreDataProperties.m"; path = "vkKeyBind/RunScript+CoreDataProperties.m"; sourceTree = "<group>"; };
+		4A59D6691E5646B7005B02F0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4A59D66C1E5B77AB005B02F0 /* coredataTestApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = coredataTestApp.xcdatamodel; sourceTree = "<group>"; };
+		4A59DF971E5B8002004FEA04 /* DB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DB.h; sourceTree = "<group>"; };
+		4A59DF981E5B8002004FEA04 /* DB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DB.m; sourceTree = "<group>"; };
+		4A59DF9A1E5B8BCB004FEA04 /* NSManagedObject+Addons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+Addons.h"; path = "vkKeyBind/NSManagedObject+Addons.h"; sourceTree = "<group>"; };
+		4A59DF9B1E5B8BCB004FEA04 /* NSManagedObject+Addons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+Addons.m"; path = "vkKeyBind/NSManagedObject+Addons.m"; sourceTree = "<group>"; };
+		4A59DF9D1E5B9BF1004FEA04 /* KeyProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyProcessor.h; sourceTree = "<group>"; };
+		4A59DF9E1E5B9BF1004FEA04 /* KeyProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyProcessor.m; sourceTree = "<group>"; };
 		4ABB55E11E54EFA400FEDA74 /* vkKeyBind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vkKeyBind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ABB55E41E54EFA400FEDA74 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4ABB55E51E54EFA400FEDA74 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A59D66A1E5646B7005B02F0 /* CoreData.framework in Frameworks */,
 				4A314D1C1E55079900A0627B /* ApplicationServices.framework in Frameworks */,
 				4A314D1A1E55076F00A0627B /* Carbon.framework in Frameworks */,
 			);
@@ -50,10 +74,29 @@
 		4A314D181E55076F00A0627B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4A59D6691E5646B7005B02F0 /* CoreData.framework */,
 				4A314D1B1E55079900A0627B /* ApplicationServices.framework */,
 				4A314D191E55076F00A0627B /* Carbon.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A59D6681E56437E005B02F0 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				4A59D65C1E564375005B02F0 /* KeyBind+CoreDataClass.h */,
+				4A59D65D1E564375005B02F0 /* KeyBind+CoreDataClass.m */,
+				4A59D65E1E564375005B02F0 /* KeyBind+CoreDataProperties.h */,
+				4A59D65F1E564375005B02F0 /* KeyBind+CoreDataProperties.m */,
+				4A59DF9A1E5B8BCB004FEA04 /* NSManagedObject+Addons.h */,
+				4A59DF9B1E5B8BCB004FEA04 /* NSManagedObject+Addons.m */,
+				4A59D6601E564375005B02F0 /* RunScript+CoreDataClass.h */,
+				4A59D6611E564375005B02F0 /* RunScript+CoreDataClass.m */,
+				4A59D6621E564375005B02F0 /* RunScript+CoreDataProperties.h */,
+				4A59D6631E564375005B02F0 /* RunScript+CoreDataProperties.m */,
+			);
+			name = DataModels;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		4ABB55D81E54EFA300FEDA74 = {
@@ -76,6 +119,12 @@
 		4ABB55E31E54EFA400FEDA74 /* vkKeyBind */ = {
 			isa = PBXGroup;
 			children = (
+				4A59DF9E1E5B9BF1004FEA04 /* KeyProcessor.m */,
+				4A59DF9D1E5B9BF1004FEA04 /* KeyProcessor.h */,
+				4A59DF971E5B8002004FEA04 /* DB.h */,
+				4A59DF981E5B8002004FEA04 /* DB.m */,
+				4A59D66B1E5B77AB005B02F0 /* coredataTestApp.xcdatamodeld */,
+				4A59D6681E56437E005B02F0 /* DataModels */,
 				4ABB55E41E54EFA400FEDA74 /* AppDelegate.h */,
 				4ABB55E51E54EFA400FEDA74 /* AppDelegate.m */,
 				4ABB55EA1E54EFA400FEDA74 /* ViewController.h */,
@@ -171,9 +220,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A59D66D1E5B77AB005B02F0 /* coredataTestApp.xcdatamodeld in Sources */,
+				4A59D6651E564375005B02F0 /* KeyBind+CoreDataProperties.m in Sources */,
 				4ABB55EC1E54EFA400FEDA74 /* ViewController.m in Sources */,
+				4A59DF9F1E5B9BF1004FEA04 /* KeyProcessor.m in Sources */,
 				4ABB55E91E54EFA400FEDA74 /* main.m in Sources */,
+				4A59DF9C1E5B8BCB004FEA04 /* NSManagedObject+Addons.m in Sources */,
 				4ABB55E61E54EFA400FEDA74 /* AppDelegate.m in Sources */,
+				4A59D6671E564375005B02F0 /* RunScript+CoreDataProperties.m in Sources */,
+				4A59DF991E5B8002004FEA04 /* DB.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +381,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4A59D66B1E5B77AB005B02F0 /* coredataTestApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4A59D66C1E5B77AB005B02F0 /* coredataTestApp.xcdatamodel */,
+			);
+			currentVersion = 4A59D66C1E5B77AB005B02F0 /* coredataTestApp.xcdatamodel */;
+			path = coredataTestApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4ABB55D91E54EFA300FEDA74 /* Project object */;
 }
